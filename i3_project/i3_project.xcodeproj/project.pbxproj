@@ -11,8 +11,7 @@
 		A37E532D2890FE5C00E27BAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E532C2890FE5C00E27BAD /* ContentView.swift */; };
 		A37E532F2890FE5D00E27BAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A37E532E2890FE5D00E27BAD /* Assets.xcassets */; };
 		A37E53322890FE5D00E27BAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A37E53312890FE5D00E27BAD /* Preview Assets.xcassets */; };
-		A37E53722891011F00E27BAD /* example in Resources */ = {isa = PBXBuildFile; fileRef = A37E53712891011F00E27BAD /* example */; };
-		A37E53742891013500E27BAD /* ppppppp in Resources */ = {isa = PBXBuildFile; fileRef = A37E53732891013500E27BAD /* ppppppp */; };
+		A37E53762891020900E27BAD /* wwwwww.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E53752891020900E27BAD /* wwwwww.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +20,7 @@
 		A37E532C2890FE5C00E27BAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A37E532E2890FE5D00E27BAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A37E53312890FE5D00E27BAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A37E53712891011F00E27BAD /* example */ = {isa = PBXFileReference; lastKnownFileType = folder; name = example; path = ../../project/example/example; sourceTree = "<group>"; };
-		A37E53732891013500E27BAD /* ppppppp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ppppppp; sourceTree = "<group>"; };
+		A37E53752891020900E27BAD /* wwwwww.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wwwwww.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,8 +37,6 @@
 		A37E531E2890FE5C00E27BAD = {
 			isa = PBXGroup;
 			children = (
-				A37E53732891013500E27BAD /* ppppppp */,
-				A37E53712891011F00E27BAD /* example */,
 				A37E53292890FE5C00E27BAD /* i3_project */,
 				A37E53282890FE5C00E27BAD /* Products */,
 			);
@@ -61,6 +57,7 @@
 				A37E532C2890FE5C00E27BAD /* ContentView.swift */,
 				A37E532E2890FE5D00E27BAD /* Assets.xcassets */,
 				A37E53302890FE5D00E27BAD /* Preview Content */,
+				A37E53752891020900E27BAD /* wwwwww.swift */,
 			);
 			path = i3_project;
 			sourceTree = "<group>";
@@ -131,10 +128,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A37E53722891011F00E27BAD /* example in Resources */,
 				A37E53322890FE5D00E27BAD /* Preview Assets.xcassets in Resources */,
 				A37E532F2890FE5D00E27BAD /* Assets.xcassets in Resources */,
-				A37E53742891013500E27BAD /* ppppppp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +142,7 @@
 			files = (
 				A37E532D2890FE5C00E27BAD /* ContentView.swift in Sources */,
 				A37E532B2890FE5C00E27BAD /* i3_projectApp.swift in Sources */,
+				A37E53762891020900E27BAD /* wwwwww.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

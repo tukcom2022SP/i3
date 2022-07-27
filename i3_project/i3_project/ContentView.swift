@@ -7,15 +7,48 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct PoiListView: View {
+    @ObservedObject var poiData = PoiData()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                ForEach(poiData.rows, id: \.date) { poi in
+                    PoiItemView(poi: poi)
+                }
+            }
+            .navigationBarTitle(Text("Restaurants"))
+        }
+        .onAppear {
+            poiData.load()
+        }
     }
-}
+}//
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        PoiListView()
+    }
+}
+    
+
+struct PoiItemView: View {//
+    let poi:PoiItem
+    var body: some View {
+            HStack {
+                Image(systemName: "fork.knife.circle")
+                    .resizable()
+                    .frame(width: 60, height: 60)
+                VStack(alignment: .leading) {
+                    Text(poi.date)
+                        .font(.title)
+                    Text(poi.stationName)
+                        .font(.headline)
+                        .foregroundColor(.brown)
+                    Text(poi.eight)
+                        .lineLimit(1)
+                        .font(.footnote)
+                        .foregroundColor(.gray)
+                }
+            }
     }
 }
