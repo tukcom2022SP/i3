@@ -63,15 +63,18 @@ class LineStore: ObservableObject {
     func load() {
         guard let url = Bundle.main.url(forResource: "res/line1.json", withExtension: "")
         else {
+            print("1")
             return
         }
         print("URL : \(url)")
         guard let data = try? Data(contentsOf: url) else {
+            print("2")
             return
         }
         print("Data : \(data)")
         let decoder = JSONDecoder()
         guard let lineData = try? decoder.decode(LineData.self, from: data) else {
+            print("3")
             return
         }
         self.lines = lineData.lines
