@@ -11,7 +11,8 @@
 		A37E532D2890FE5C00E27BAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E532C2890FE5C00E27BAD /* ContentView.swift */; };
 		A37E532F2890FE5D00E27BAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A37E532E2890FE5D00E27BAD /* Assets.xcassets */; };
 		A37E53322890FE5D00E27BAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A37E53312890FE5D00E27BAD /* Preview Assets.xcassets */; };
-		A37E53762891020900E27BAD /* wwwwww.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E53752891020900E27BAD /* wwwwww.swift */; };
+		A37E53762891020900E27BAD /* Line1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E53752891020900E27BAD /* Line1.swift */; };
+		A37E5382289122BA00E27BAD /* LineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E5381289122BA00E27BAD /* LineDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +21,8 @@
 		A37E532C2890FE5C00E27BAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A37E532E2890FE5D00E27BAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A37E53312890FE5D00E27BAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A37E53752891020900E27BAD /* wwwwww.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wwwwww.swift; sourceTree = "<group>"; };
+		A37E53752891020900E27BAD /* Line1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line1.swift; sourceTree = "<group>"; };
+		A37E5381289122BA00E27BAD /* LineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 				A37E532C2890FE5C00E27BAD /* ContentView.swift */,
 				A37E532E2890FE5D00E27BAD /* Assets.xcassets */,
 				A37E53302890FE5D00E27BAD /* Preview Content */,
-				A37E53752891020900E27BAD /* wwwwww.swift */,
+				A37E53752891020900E27BAD /* Line1.swift */,
+				A37E5381289122BA00E27BAD /* LineDetailView.swift */,
 			);
 			path = i3_project;
 			sourceTree = "<group>";
@@ -141,8 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A37E532D2890FE5C00E27BAD /* ContentView.swift in Sources */,
+				A37E5382289122BA00E27BAD /* LineDetailView.swift in Sources */,
 				A37E532B2890FE5C00E27BAD /* i3_projectApp.swift in Sources */,
-				A37E53762891020900E27BAD /* wwwwww.swift in Sources */,
+				A37E53762891020900E27BAD /* Line1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

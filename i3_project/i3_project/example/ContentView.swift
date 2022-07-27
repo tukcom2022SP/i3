@@ -1,11 +1,9 @@
 //
 //  ContentView.swift
-//  i3_project
+//  example
 //
 //  Created by 홍길동 on 2022/07/27.
-//
-
-import SwiftUI
+////
 
 import SwiftUI
 
