@@ -26,10 +26,10 @@ struct Line:Codable {
     let nineThirty  : String
     let ten :  String
     let tenThirty :  String
-    let elevenAM :  String
-    let elevenAMThirty :  String
-    let twelveAM :  String
-    let twelveAMThirty :  String
+    let eleven :  String
+    let elevenThirty :  String
+    let twelve :  String
+    let twelveThirty :  String
     let onePM :  String
     let onePMThirty :  String
     let twoPM :  String
@@ -82,3 +82,4 @@ class LineStore: ObservableObject {
         //dasdasdsasdsdsada
     }
 }
+//
