@@ -8,7 +8,7 @@ main : 프로젝트 최종본을 올리는 Branch
 
 Jang : jisssuu 의 개인 branch. 
 
-Kim : --- 의 개인 branch.    
+Kim : rlaxoals36 의 개인 branch.    
 
 Lee : BAESlee 의 개인 branch. 
 
