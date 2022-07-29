@@ -37,11 +37,11 @@
       "eightThirty": "70.9",
       "nine": "40.4",
       "nineThirty": "38.0",
-      "fff": "상선",
+      "fff": "UpLine",
       "stationName": "서울역",
       "stationNum": 150,
       "stationCount": 1,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -82,11 +82,11 @@
       "eightThirty": "19.0",
       "nine": "18.5",
       "nineThirty": "15.1",
-      "fff": "하선",
+      "fff": "DownLine",
       "stationName": "서울역",
       "stationNum": 150,
       "stationCount": 2,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -127,11 +127,11 @@
       "eightThirty": "50.9",
       "nine": "30.8",
       "nineThirty": "35.8",
-      "fff": "상선",
+      "fff": "UpLine",
       "stationName": "시청",
       "stationNum": 151,
       "stationCount": 3,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -172,11 +172,11 @@
       "eightThirty": "20.0",
       "nine": "18.4",
       "nineThirty": "14.5",
-      "fff": "하선",
+      "fff": "DownLine",
       "stationName": "시청",
       "stationNum": 151,
       "stationCount": 4,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -217,11 +217,11 @@
       "eightThirty": "26.5",
       "nine": "19.2",
       "nineThirty": "26.2",
-      "fff": "상선",
+      "fff": "UpLine",
       "stationName": "종각",
       "stationNum": 152,
       "stationCount": 5,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -262,11 +262,11 @@
       "eightThirty": "31.3",
       "nine": "24.1",
       "nineThirty": "18.5",
-      "fff": "하선",
+      "fff": "DownLine",
       "stationName": "종각",
       "stationNum": 152,
       "stationCount": 6,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -307,11 +307,11 @@
       "eightThirty": "25.5",
       "nine": "18.9",
       "nineThirty": "23.6",
-      "fff": "상선",
+      "fff": "UpLine",
       "stationName": "종로3가",
       "stationNum": 153,
       "stationCount": 7,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -352,11 +352,11 @@
       "eightThirty": "49.6",
       "nine": "35.6",
       "nineThirty": "26.5",
-      "fff": "하선",
+      "fff": "DownLine",
       "stationName": "종로3가",
       "stationNum": 153,
       "stationCount": 8,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -397,11 +397,11 @@
       "eightThirty": "16.7",
       "nine": "16.5",
       "nineThirty": "15.8",
-      "fff": "상선",
+      "fff": "UpLine",
       "stationName": "종로5가",
       "stationNum": 154,
       "stationCount": 9,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -442,11 +442,11 @@
       "eightThirty": "50.7",
       "nine": "42.7",
       "nineThirty": "28.5",
-      "fff": "하선",
+      "fff": "DownLine",
       "stationName": "종로5가",
       "stationNum": 154,
       "stationCount": 10,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -487,11 +487,11 @@
       "eightThirty": "17.8",
       "nine": "14.9",
       "nineThirty": "14.7",
-      "fff": "상선",
+      "fff": "UpLine",
       "stationName": "동대문",
       "stationNum": 155,
       "stationCount": 11,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -532,11 +532,11 @@
       "eightThirty": "57.8",
       "nine": "43.5",
       "nineThirty": "31.8",
-      "fff": "하선",
+      "fff": "DownLine",
       "stationName": "동대문",
       "stationNum": 155,
       "stationCount": 12,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -577,11 +577,11 @@
       "eightThirty": "14.1",
       "nine": "10.7",
       "nineThirty": "16.6",
-      "fff": "상선",
+      "fff": "UpLine",
       "stationName": "신설동",
       "stationNum": 156,
       "stationCount": 13,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -622,11 +622,11 @@
       "eightThirty": "41.7",
       "nine": "40.8",
       "nineThirty": "33.7",
-      "fff": "하선",
+      "fff": "DownLine",
       "stationName": "신설동",
       "stationNum": 156,
       "stationCount": 14,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -667,11 +667,11 @@
       "eightThirty": "11.6",
       "nine": "8.7",
       "nineThirty": "12.8",
-      "fff": "상선",
+      "fff": "UpLine",
       "stationName": "제기동",
       "stationNum": 157,
       "stationCount": 15,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -712,11 +712,11 @@
       "eightThirty": "46.4",
       "nine": "39.4",
       "nineThirty": "29.0",
-      "fff": "하선",
+      "fff": "DownLine",
       "stationName": "제기동",
       "stationNum": 157,
       "stationCount": 16,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -757,11 +757,11 @@
       "eightThirty": "8.8",
       "nine": "6.6",
       "nineThirty": "10.1",
-      "fff": "상선",
+      "fff": "UpLine",
       "stationName": "청량리",
       "stationNum": 158,
       "stationCount": 17,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -802,11 +802,11 @@
       "eightThirty": "45.8",
       "nine": "38.5",
       "nineThirty": "27.9",
-      "fff": "하선",
+      "fff": "DownLine",
       "stationName": "청량리",
       "stationNum": 158,
       "stationCount": 18,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -847,11 +847,11 @@
       "eightThirty": "16.1",
       "nine": "11.2",
       "nineThirty": "15.2",
-      "fff": "상선",
+      "fff": "UpLine",
       "stationName": "동묘앞",
       "stationNum": 159,
       "stationCount": 19,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     },
     {
@@ -892,11 +892,11 @@
       "eightThirty": "50.4",
       "nine": "37.3",
       "nineThirty": "37.2",
-      "fff": "하선",
+      "fff": "DownLine",
       "stationName": "동묘앞",
       "stationNum": 159,
       "stationCount": 20,
-      "date": "평일",
+      "date": "WeekDay",
       "line": 1
     }
 ]}
