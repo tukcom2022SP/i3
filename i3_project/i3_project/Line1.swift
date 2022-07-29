@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct Line:Codable {
-    let stationCount :  Int
+    let stationCount : String
     let date :  String
     let line  : Int
     let stationNum :  Int
