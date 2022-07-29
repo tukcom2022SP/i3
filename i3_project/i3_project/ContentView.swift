@@ -15,8 +15,8 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach (lineStore.lines, id:\.stationName) { line in
-                    NavigationLink (destination: LineDetailView(line: line)) {
-                        AlbumItemView(line: line)
+                    NavigationLink (destination: LineDetailView(line:line)) {
+                        LineStationView(line: line)
                     }
                 }
             }
@@ -34,7 +34,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct AlbumItemView: View {
+struct LineStationView: View {
     static let imageSize = 60
     let line :Line
     @State var image: Image?
