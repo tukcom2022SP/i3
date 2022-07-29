@@ -40,7 +40,7 @@
       "fff": "UpLine",
       "stationName": "서울역",
       "stationNum": 150,
-      "stationCount": 1,
+      "stationCount": "1",
       "date": "WeekDay",
       "line": 1
     },
@@ -85,7 +85,7 @@
       "fff": "DownLine",
       "stationName": "서울역",
       "stationNum": 150,
-      "stationCount": 2,
+      "stationCount": "2",
       "date": "WeekDay",
       "line": 1
     },
@@ -130,7 +130,7 @@
       "fff": "UpLine",
       "stationName": "시청",
       "stationNum": 151,
-      "stationCount": 3,
+      "stationCount": "3",
       "date": "WeekDay",
       "line": 1
     },
@@ -175,7 +175,7 @@
       "fff": "DownLine",
       "stationName": "시청",
       "stationNum": 151,
-      "stationCount": 4,
+      "stationCount": "4",
       "date": "WeekDay",
       "line": 1
     },
@@ -220,7 +220,7 @@
       "fff": "UpLine",
       "stationName": "종각",
       "stationNum": 152,
-      "stationCount": 5,
+      "stationCount": "5",
       "date": "WeekDay",
       "line": 1
     },
@@ -265,7 +265,7 @@
       "fff": "DownLine",
       "stationName": "종각",
       "stationNum": 152,
-      "stationCount": 6,
+      "stationCount": "6",
       "date": "WeekDay",
       "line": 1
     },
@@ -310,7 +310,7 @@
       "fff": "UpLine",
       "stationName": "종로3가",
       "stationNum": 153,
-      "stationCount": 7,
+      "stationCount": "7",
       "date": "WeekDay",
       "line": 1
     },
@@ -355,7 +355,7 @@
       "fff": "DownLine",
       "stationName": "종로3가",
       "stationNum": 153,
-      "stationCount": 8,
+      "stationCount": "8",
       "date": "WeekDay",
       "line": 1
     },
@@ -400,7 +400,7 @@
       "fff": "UpLine",
       "stationName": "종로5가",
       "stationNum": 154,
-      "stationCount": 9,
+      "stationCount": "9",
       "date": "WeekDay",
       "line": 1
     },
@@ -445,7 +445,7 @@
       "fff": "DownLine",
       "stationName": "종로5가",
       "stationNum": 154,
-      "stationCount": 10,
+      "stationCount": "10",
       "date": "WeekDay",
       "line": 1
     },
@@ -490,7 +490,7 @@
       "fff": "UpLine",
       "stationName": "동대문",
       "stationNum": 155,
-      "stationCount": 11,
+      "stationCount": "11",
       "date": "WeekDay",
       "line": 1
     },
@@ -535,7 +535,7 @@
       "fff": "DownLine",
       "stationName": "동대문",
       "stationNum": 155,
-      "stationCount": 12,
+      "stationCount": "12",
       "date": "WeekDay",
       "line": 1
     },
@@ -580,7 +580,7 @@
       "fff": "UpLine",
       "stationName": "신설동",
       "stationNum": 156,
-      "stationCount": 13,
+      "stationCount": "13",
       "date": "WeekDay",
       "line": 1
     },
@@ -625,7 +625,7 @@
       "fff": "DownLine",
       "stationName": "신설동",
       "stationNum": 156,
-      "stationCount": 14,
+      "stationCount": "14",
       "date": "WeekDay",
       "line": 1
     },
@@ -670,7 +670,7 @@
       "fff": "UpLine",
       "stationName": "제기동",
       "stationNum": 157,
-      "stationCount": 15,
+      "stationCount": "15",
       "date": "WeekDay",
       "line": 1
     },
@@ -715,7 +715,7 @@
       "fff": "DownLine",
       "stationName": "제기동",
       "stationNum": 157,
-      "stationCount": 16,
+      "stationCount": "16",
       "date": "WeekDay",
       "line": 1
     },
@@ -760,7 +760,7 @@
       "fff": "UpLine",
       "stationName": "청량리",
       "stationNum": 158,
-      "stationCount": 17,
+      "stationCount": "17",
       "date": "WeekDay",
       "line": 1
     },
@@ -805,7 +805,7 @@
       "fff": "DownLine",
       "stationName": "청량리",
       "stationNum": 158,
-      "stationCount": 18,
+      "stationCount": "18",
       "date": "WeekDay",
       "line": 1
     },
@@ -850,7 +850,7 @@
       "fff": "UpLine",
       "stationName": "동묘앞",
       "stationNum": 159,
-      "stationCount": 19,
+      "stationCount": "19",
       "date": "WeekDay",
       "line": 1
     },
@@ -895,7 +895,7 @@
       "fff": "DownLine",
       "stationName": "동묘앞",
       "stationNum": 159,
-      "stationCount": 20,
+      "stationCount": "20",
       "date": "WeekDay",
       "line": 1
     }
