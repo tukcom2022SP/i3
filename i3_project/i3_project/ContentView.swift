@@ -20,7 +20,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle(Text("Albums"))
+            .navigationTitle(Text("1Lines"))
         }.onAppear {
             lineStore.load()
         }
@@ -47,7 +47,7 @@ struct LineStationView: View {
                 Text("\(line.stationName)")
                     .font(.headline)
                 Spacer()
-                Text("\(line.date)")
+                Text("\(line.fff)")
                     .font(.footnote)
                     .foregroundColor(.green)
             }
