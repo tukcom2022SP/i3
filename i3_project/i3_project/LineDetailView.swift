@@ -11,18 +11,16 @@ struct LineDetailView: View {
     let line:Line
     var body: some View {
         List {
-            Image(systemName: "music.note.list")
+            Image("line1")
                 .resizable()
                 .frame(width: 200, height: 200)
-
-            
             HStack {
-                Text("album.albumTitle")
+                Text(" StationName ")
                 Text(line.stationName)
                     .frame(maxWidth: .infinity, alignment: .trailing)
             }
             HStack{
-                Text("Artist name")
+                Text("data date")
                 Text(line.date)
                     .frame(maxWidth: .infinity, alignment: .trailing)
             }
