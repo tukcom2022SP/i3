@@ -61,7 +61,7 @@ class LineStore: ObservableObject {
     static let singleton = LineStore()
     @Published var lines = [Line]()
     func load() {
-        guard let url = Bundle.main.url(forResource: "res/line4.json", withExtension: "")
+        guard let url = Bundle.main.url(forResource: "res/line5.json", withExtension: "")
         else {
             print("1")
             return
