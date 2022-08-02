@@ -1,4 +1,4 @@
-{ "lines" :[
+{ "weekday" :[
   
     {
         "ten": "0.0",
@@ -1529,7 +1529,9 @@
         "stationCount":" 568",
           "date": "weekday",
         "line": 8
-      },{
+      }],
+    "saturday": [
+    {
         "ten": "0.0",
         "tenThirty": "0.0",
         "eleven": "0.0",
@@ -3058,7 +3060,9 @@
         "stationCount":" 1136",
         "date": "saturday",
         "line": 8
-      },{
+      }],
+    "sunday": [
+    {
         "ten": "0.0",
         "tenThirty": "0.0",
         "eleven": "0.0",
