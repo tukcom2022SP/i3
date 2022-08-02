@@ -9,17 +9,17 @@ import SwiftUI
 
 struct LineEightView: View {
     @ObservedObject var lineStore = LineStoreEight.singleton
+    @State var text = ""
     var body: some View {
-        NavigationView {
+                searchBar(text: $text)
             List {
-                ForEach (lineStore.saturday, id:\.stationCount) { line in
+                ForEach (lineStore.saturday.filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
                         LineEightStationView(line: line)
                     }
                 }
             }
-            .navigationTitle(Text("Line8"))
-        }.onAppear {
+        .onAppear {
             lineStore.load()
         }
     }

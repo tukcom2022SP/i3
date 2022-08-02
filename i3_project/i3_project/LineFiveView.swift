@@ -9,17 +9,17 @@ import SwiftUI
 
 struct LineFiveView: View {
     @ObservedObject var lineStore = LineStoreFive.singleton
+    @State var text = ""
     var body: some View {
-        NavigationView {
+                searchBar(text: $text)
             List {
-                ForEach (lineStore.weekday, id:\.stationCount) { line in
+                ForEach (lineStore.saturday.filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
                         LineFiveStationView(line: line)
                     }
                 }
             }
-            .navigationTitle(Text("Line5"))
-        }.onAppear {
+        .onAppear {
             lineStore.load()
         }
     }

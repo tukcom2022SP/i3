@@ -9,21 +9,20 @@ import SwiftUI
 
 struct LineThreeView: View {
     @ObservedObject var lineStore = LineStoreThree.singleton
+    @State var text = ""
     var body: some View {
-        NavigationView {
+                searchBar(text: $text)
             List {
-                ForEach (lineStore.sunday, id:\.stationCount) { line in
+                ForEach (lineStore.saturday.filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
                         LineThreeStationView(line: line)
                     }
                 }
             }
-            .navigationTitle(Text("Line3"))
-        }.onAppear {
+        .onAppear {
             lineStore.load()
         }
     }
-     
 }
 
 struct LineThreeView_Previews: PreviewProvider {

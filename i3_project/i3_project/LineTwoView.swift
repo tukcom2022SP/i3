@@ -7,23 +7,23 @@
 
 import SwiftUI
 
+
 struct LineTwoView: View {
-    @ObservedObject var lineStore = LineStoreOne.singleton
+    @ObservedObject var lineStore = LineStoreTwo.singleton
+    @State var text = ""
     var body: some View {
-        NavigationView {
+                searchBar(text: $text)
             List {
-                ForEach (lineStore.saturday, id:\.stationCount) { line in
+                ForEach (lineStore.saturday.filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
-                        LineOneStationView(line: line)
+                        LineTwoStationView(line: line)
                     }
                 }
             }
-            .navigationTitle(Text("Line2"))
-        }.onAppear {
+        .onAppear {
             lineStore.load()
         }
     }
-        
 }
 
 struct LineTwoView_Previews: PreviewProvider {
