@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct Line:Codable {
-    let stationCount :  Int
+    let stationCount : String
     let date :  String
     let line  : Int
     let stationNum :  Int
@@ -61,7 +61,7 @@ class LineStore: ObservableObject {
     static let singleton = LineStore()
     @Published var lines = [Line]()
     func load() {
-        guard let url = Bundle.main.url(forResource: "res/line1.json", withExtension: "")
+        guard let url = Bundle.main.url(forResource: "res/line8.json", withExtension: "")
         else {
             print("1")
             return
@@ -82,4 +82,4 @@ class LineStore: ObservableObject {
         //dasdasdsasdsdsada
     }
 }
-//
+
