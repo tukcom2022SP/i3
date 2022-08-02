@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A30DED0F2898F46A0003730D /* LineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DED0E2898F46A0003730D /* LineDetailView.swift */; };
-		A30DED112898F48A0003730D /* i3_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DED102898F48A0003730D /* i3_projectApp.swift */; };
 		A30DED152898F69C0003730D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DED142898F69C0003730D /* SearchBar.swift */; };
 		A34E6F9B2898AFC10012463C /* LineThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E6F8F2898AFC10012463C /* LineThreeView.swift */; };
 		A34E6F9C2898AFC10012463C /* LineEightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E6F902898AFC10012463C /* LineEightView.swift */; };
@@ -23,11 +21,12 @@
 		A37E532F2890FE5D00E27BAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A37E532E2890FE5D00E27BAD /* Assets.xcassets */; };
 		A37E53322890FE5D00E27BAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A37E53312890FE5D00E27BAD /* Preview Assets.xcassets */; };
 		A37E5386289127BD00E27BAD /* res in Resources */ = {isa = PBXBuildFile; fileRef = A37E5385289127BD00E27BAD /* res */; };
+		A39DCA29289908DB00974FBF /* example.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39DCA28289908DB00974FBF /* example.swift */; };
+		A39DCA2B2899094100974FBF /* i3_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39DCA2A2899094100974FBF /* i3_projectApp.swift */; };
+		A39DCA2D2899095B00974FBF /* LineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39DCA2C2899095B00974FBF /* LineDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A30DED0E2898F46A0003730D /* LineDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineDetailView.swift; path = "../../../../.Trash/i3-1 오후 2.56.43/i3_project/i3_project/LineDetailView.swift"; sourceTree = "<group>"; };
-		A30DED102898F48A0003730D /* i3_projectApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = i3_projectApp.swift; path = "../../../../.Trash/i3-1 오후 2.56.43/i3_project/i3_project/i3_projectApp.swift"; sourceTree = "<group>"; };
 		A30DED142898F69C0003730D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		A34E6F8F2898AFC10012463C /* LineThreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineThreeView.swift; sourceTree = "<group>"; };
 		A34E6F902898AFC10012463C /* LineEightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineEightView.swift; sourceTree = "<group>"; };
@@ -43,6 +42,9 @@
 		A37E532E2890FE5D00E27BAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A37E53312890FE5D00E27BAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A37E5385289127BD00E27BAD /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
+		A39DCA28289908DB00974FBF /* example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = example.swift; sourceTree = "<group>"; };
+		A39DCA2A2899094100974FBF /* i3_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = i3_projectApp.swift; sourceTree = "<group>"; };
+		A39DCA2C2899095B00974FBF /* LineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		A37E531E2890FE5C00E27BAD = {
 			isa = PBXGroup;
 			children = (
+				A39DCA28289908DB00974FBF /* example.swift */,
 				A30DED142898F69C0003730D /* SearchBar.swift */,
 				A37E53292890FE5C00E27BAD /* i3_project */,
 				A37E53282890FE5C00E27BAD /* Products */,
@@ -76,9 +79,8 @@
 		A37E53292890FE5C00E27BAD /* i3_project */ = {
 			isa = PBXGroup;
 			children = (
-				A30DED102898F48A0003730D /* i3_projectApp.swift */,
+				A39DCA2A2899094100974FBF /* i3_projectApp.swift */,
 				A34E6F952898AFC10012463C /* Line.swift */,
-				A30DED0E2898F46A0003730D /* LineDetailView.swift */,
 				A34E6F902898AFC10012463C /* LineEightView.swift */,
 				A34E6F9A2898AFC10012463C /* LineFiveView.swift */,
 				A34E6F942898AFC10012463C /* LineFourView.swift */,
@@ -91,6 +93,7 @@
 				A37E532E2890FE5D00E27BAD /* Assets.xcassets */,
 				A37E53302890FE5D00E27BAD /* Preview Content */,
 				A37E5385289127BD00E27BAD /* res */,
+				A39DCA2C2899095B00974FBF /* LineDetailView.swift */,
 			);
 			path = i3_project;
 			sourceTree = "<group>";
@@ -174,10 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A39DCA29289908DB00974FBF /* example.swift in Sources */,
 				A30DED152898F69C0003730D /* SearchBar.swift in Sources */,
+				A39DCA2B2899094100974FBF /* i3_projectApp.swift in Sources */,
 				A34E6F9D2898AFC10012463C /* LineOneView.swift in Sources */,
 				A34E6F9C2898AFC10012463C /* LineEightView.swift in Sources */,
-				A30DED112898F48A0003730D /* i3_projectApp.swift in Sources */,
+				A39DCA2D2899095B00974FBF /* LineDetailView.swift in Sources */,
 				A34E6FA02898AFC10012463C /* LineFourView.swift in Sources */,
 				A34E6F9E2898AFC10012463C /* LineView.swift in Sources */,
 				A34E6FA12898AFC10012463C /* Line.swift in Sources */,
@@ -186,7 +191,6 @@
 				A34E6F9F2898AFC10012463C /* LineSixView.swift in Sources */,
 				A34E6FA62898AFC10012463C /* LineFiveView.swift in Sources */,
 				A34E6FA22898AFC10012463C /* LineTwoView.swift in Sources */,
-				A30DED0F2898F46A0003730D /* LineDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

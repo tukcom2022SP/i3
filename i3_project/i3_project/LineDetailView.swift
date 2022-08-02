@@ -1,9 +1,9 @@
 //
 //  LineDetailView.swift
-//  example
+//  i3_project
 //
-//  Created by 홍길동 on 2022/07/27.
-//..
+//  Created by 홍길동 on 2022/08/02.
+//
 
 import SwiftUI
 
@@ -36,4 +36,3 @@ struct LineDetailView_Previews: PreviewProvider {
         )
     }
 }
-
