@@ -11,32 +11,33 @@ struct LineView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink("Line1"){
-                    LineOneView()
+                NavigationLink(destination: LineOneView()){
+                    Text("1호선")
                 }
-                NavigationLink("Line2"){
-                    LineTwoView()
+                NavigationLink(destination: LineTwoView()){
+                    Text("2호선")
                 }
-                NavigationLink("Line3"){
-                    LineThreeView()
+                NavigationLink(destination:LineThreeView()){
+                    Text("3호선")
                 }
-                NavigationLink("Line4"){
-                    LineFourView()
+                NavigationLink(destination: LineFourView()){
+                    Text("4호선")
                 }
-                NavigationLink("Line5"){
-                    LineFiveView()
+                NavigationLink(destination: LineFiveView()){
+                    Text("5호선")
                 }
-                NavigationLink("Line6"){
-                    LineSixView()
+                NavigationLink(destination: LineSixView()){
+                    Text("6호선")
                 }
-                NavigationLink("Line7"){
-                    LineSevenView()
+                NavigationLink(destination: LineSevenView()){
+                    Text("7호선")
                 }
-                NavigationLink("Line8"){
-                    LineEightView()
+                NavigationLink(destination: LineEightView()){
+                    Text("8호선")
                 }
             }
             .navigationTitle(Text("Select Line"))
+            
         }
     }
 }
