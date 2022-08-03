@@ -30,11 +30,13 @@ func getListOfDayForOne(inputLineStore:LineStoreOne)-> [Line]{
 struct LineOneView: View {
     @ObservedObject var lineStore = LineStoreOne.singleton
     let day = getDayOfWeek(date: Date())
+    @State var text = ""
     var body: some View {
+        searchBar(text: $text)
         switch day {
         case "토":
             List {
-                ForEach (lineStore.saturday, id:\.stationCount) { line in
+                ForEach (lineStore.saturday.filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
                         LineOneStationView(line: line)
                     }
@@ -44,7 +46,7 @@ struct LineOneView: View {
             }
         case "일":
             List {
-                ForEach (lineStore.sunday, id:\.stationCount) { line in
+                ForEach (lineStore.saturday.filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
                         LineOneStationView(line: line)
                     }
@@ -54,7 +56,7 @@ struct LineOneView: View {
             }
         default:
             List {
-                ForEach (lineStore.weekday, id:\.stationCount) { line in
+                ForEach (lineStore.saturday.filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
                         LineOneStationView(line: line)
                     }
