@@ -4,26 +4,65 @@
 //
 //  Created by Park Se in on 2022/07/31.
 //
-
-
 import SwiftUI
 
+func getDayOfWeek(date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEEEEE"
+        formatter.locale = Locale(identifier:"ko_KR")
+        let convertStr = formatter.string(from: date)
+        return convertStr
+}
+    
+func getListOfDayForOne(inputLineStore:LineStoreOne)-> [Line]{
+    let lineStore = inputLineStore
+    let day = getDayOfWeek(date: Date())
+    switch day {
+    case "토":
+        return lineStore.weekday
+    case "일":
+        return lineStore.saturday
+    default:
+        return lineStore.sunday
+    }
+}
 
 struct LineOneView: View {
-    @State var text = ""
     @ObservedObject var lineStore = LineStoreOne.singleton
+    let day = getDayOfWeek(date: Date())
     var body: some View {
-            searchBar(text: $text)
-        List {
-            ForEach (lineStore.saturday.filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
+        switch day {
+        case "토":
+            List {
+                ForEach (lineStore.saturday, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
                         LineOneStationView(line: line)
                     }
                 }
+            }.onAppear {
+                lineStore.load()
             }
-            .onAppear {
-            lineStore.load()
+        case "일":
+            List {
+                ForEach (lineStore.sunday, id:\.stationCount) { line in
+                    NavigationLink (destination: LineDetailView(line:line)) {
+                        LineOneStationView(line: line)
+                    }
+                }
+            }.onAppear {
+                lineStore.load()
             }
+        default:
+            List {
+                ForEach (lineStore.weekday, id:\.stationCount) { line in
+                    NavigationLink (destination: LineDetailView(line:line)) {
+                        LineOneStationView(line: line)
+                    }
+                }
+            }.onAppear {
+                lineStore.load()
+            }
+        }
     }
 }
 
@@ -54,7 +93,7 @@ struct LineOneStationView: View {
 }
 
 
-struct LineStationView_Previews: PreviewProvider {
+struct LineOneStationView_Previews: PreviewProvider {
     static var previews: some View {
         List {
             LineOneStationView(line: Line (
@@ -63,4 +102,3 @@ struct LineStationView_Previews: PreviewProvider {
         }
     }
 }
-
