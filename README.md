@@ -4,17 +4,15 @@
 서울 지하철 역 별 혼잡도를 제공하는 앱
 
 # Branch 
-* main : 프로젝트 최종본을 올리는 Branch  
-  
-* develop : 개인 branch 작업을 합치는 Branch  
+* main : 프로젝트 최종본을 올리는 Branch   
 
-* Jang : jisssuu 의 개인 branch. 
+* jjs : jisssuu 의 개인 branch. 
 
-* Kim : rlaxoals36 의 개인 branch.    
+* Ktm : rlaxoals36 의 개인 branch.    
 
 * Lee : BAESlee 의 개인 branch. 
 
-* Park : antonio26548 의 개인 branch. 
+* anto : antonio26548 의 개인 branch. 
 
 # 규칙
 
