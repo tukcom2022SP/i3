@@ -10,7 +10,7 @@
 
 * Ktm : rlaxoals36 의 개인 branch.    
 
-* Lee : BAESlee 의 개인 branch. 
+* sb : BAESlee 의 개인 branch. 
 
 * anto : antonio26548 의 개인 branch. 
 
