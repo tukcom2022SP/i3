@@ -101,6 +101,7 @@ struct LineView: View {
                 }
             }
             .navigationTitle(Text("Select Line"))
+            .navigationBarTitleDisplayMode(.large)
             
         }
     }

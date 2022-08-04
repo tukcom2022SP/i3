@@ -33,6 +33,7 @@ struct LineOneView: View {
     @State var text = ""
     var body: some View {
         searchBar(text: $text)
+            .navigationBarTitleDisplayMode(.inline)
         switch day {
         case "토":
             List {
