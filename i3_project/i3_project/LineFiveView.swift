@@ -30,7 +30,7 @@ struct LineFiveView: View {
             List {
                 ForEach (getListOfDayForFive(inputLineStore: lineStore).filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
-                        LineOneStationView(line: line)
+                        LineFiveStationView(line: line)
                     }
                 }
             }.onAppear {
@@ -40,7 +40,7 @@ struct LineFiveView: View {
             List {
                 ForEach (getListOfDayForFive(inputLineStore: lineStore).filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
-                        LineOneStationView(line: line)
+                        LineFiveStationView(line: line)
                     }
                 }
             }.onAppear {
@@ -50,7 +50,7 @@ struct LineFiveView: View {
             List {
                 ForEach (getListOfDayForFive(inputLineStore: lineStore).filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
-                        LineOneStationView(line: line)
+                        LineFiveStationView(line: line)
                     }
                 }
             }.onAppear {
