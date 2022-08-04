@@ -1,9 +1,11 @@
 import SwiftUI
 import FirebaseCore
 
-class AppDelegate: NSObject, UIApplicationDelegate {
+
+class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication,
-                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+                   didFinishLaunchingWithOptions
+                   launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     FirebaseApp.configure()
 
     return true
@@ -12,12 +14,15 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct i3_projectApp: App {
+    
     init() {
           FirebaseApp.configure() // 코드 추가
       }
+    
     var body: some Scene {
         WindowGroup {
             LineView()
+            LineView().environmentObject(AuthViewModel.shared)
         }
     }
 }
