@@ -30,7 +30,7 @@ struct LineSixView: View {
             List {
                 ForEach (getListOfDayForSix(inputLineStore: lineStore).filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
-                        LineOneStationView(line: line)
+                        LineSixStationView(line: line)
                     }
                 }
             }.onAppear {
@@ -40,7 +40,7 @@ struct LineSixView: View {
             List {
                 ForEach (getListOfDayForSix(inputLineStore: lineStore).filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
-                        LineOneStationView(line: line)
+                        LineSixStationView(line: line)
                     }
                 }
             }.onAppear {
@@ -50,7 +50,7 @@ struct LineSixView: View {
             List {
                 ForEach (getListOfDayForSix(inputLineStore: lineStore).filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
-                        LineOneStationView(line: line)
+                        LineSixStationView(line: line)
                     }
                 }
             }.onAppear {

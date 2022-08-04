@@ -30,7 +30,7 @@ struct LineSevenView: View {
             List {
                 ForEach (getListOfDayForSeven(inputLineStore: lineStore).filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
-                        LineOneStationView(line: line)
+                        LineSevenStationView(line: line)
                     }
                 }
             }.onAppear {
@@ -40,7 +40,7 @@ struct LineSevenView: View {
             List {
                 ForEach (getListOfDayForSeven(inputLineStore: lineStore).filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
-                        LineOneStationView(line: line)
+                        LineSevenStationView(line: line)
                     }
                 }
             }.onAppear {
@@ -50,7 +50,7 @@ struct LineSevenView: View {
             List {
                 ForEach (getListOfDayForSeven(inputLineStore: lineStore).filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
-                        LineOneStationView(line: line)
+                        LineSevenStationView(line: line)
                     }
                 }
             }.onAppear {
@@ -96,3 +96,5 @@ struct LineSevenStationView_Previews: PreviewProvider {
         }
     }
 }
+
+//
