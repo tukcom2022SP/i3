@@ -21,8 +21,7 @@ struct i3_projectApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LineView()
-            LineView().environmentObject(AuthViewModel.shared)
+            AuthView()
         }
     }
 }
