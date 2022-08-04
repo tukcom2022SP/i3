@@ -22,7 +22,6 @@ struct LineDetailView: View {
     var body: some View {
         List {
             HStack {
-                Text("hihi")
                 Image(systemName:"tram.circle.fill")
                     .resizable()
                     .frame(width: 80, height: 80)
