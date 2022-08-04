@@ -11,11 +11,11 @@ func getListOfDayForFive(inputLineStore:LineStoreFive)-> [Line]{
     let day = getDayOfWeek(date: Date())
     switch day {
     case "토":
-        return lineStore.weekday
-    case "일":
         return lineStore.saturday
-    default:
+    case "일":
         return lineStore.sunday
+    default:
+        return lineStore.weekday
     }
 }
 
@@ -28,9 +28,9 @@ struct LineFiveView: View {
         switch day {
         case "토":
             List {
-                ForEach (lineStore.saturday.filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
+                ForEach (getListOfDayForFive(inputLineStore: lineStore).filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
-                        LineFiveStationView(line: line)
+                        LineOneStationView(line: line)
                     }
                 }
             }.onAppear {
@@ -38,9 +38,9 @@ struct LineFiveView: View {
             }
         case "일":
             List {
-                ForEach (lineStore.saturday.filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
+                ForEach (getListOfDayForFive(inputLineStore: lineStore).filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
-                        LineFiveStationView(line: line)
+                        LineOneStationView(line: line)
                     }
                 }
             }.onAppear {
@@ -48,9 +48,9 @@ struct LineFiveView: View {
             }
         default:
             List {
-                ForEach (lineStore.saturday.filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
+                ForEach (getListOfDayForFive(inputLineStore: lineStore).filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
-                        LineFiveStationView(line: line)
+                        LineOneStationView(line: line)
                     }
                 }
             }.onAppear {
