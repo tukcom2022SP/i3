@@ -11,11 +11,11 @@ func getListOfDayForThree(inputLineStore:LineStoreThree)-> [Line]{
     let day = getDayOfWeek(date: Date())
     switch day {
     case "토":
-        return lineStore.weekday
-    case "일":
         return lineStore.saturday
-    default:
+    case "일":
         return lineStore.sunday
+    default:
+        return lineStore.weekday
     }
 }
 
@@ -27,35 +27,35 @@ struct LineThreeView: View {
         searchBar(text: $text)
         switch day {
         case "토":
-            List {
-                ForEach (lineStore.saturday.filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
-                    NavigationLink (destination: LineDetailView(line:line)) {
-                        LineThreeStationView(line: line)
+                List {
+                    ForEach (getListOfDayForThree(inputLineStore: lineStore).filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
+                        NavigationLink (destination: LineDetailView(line:line)) {
+                            LineOneStationView(line: line)
+                        }
                     }
+                }.onAppear {
+                    lineStore.load()
                 }
-            }.onAppear {
-                lineStore.load()
-            }
         case "일":
-            List {
-                ForEach (lineStore.saturday.filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
-                    NavigationLink (destination: LineDetailView(line:line)) {
-                        LineThreeStationView(line: line)
+                List {
+                    ForEach (getListOfDayForThree(inputLineStore: lineStore).filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
+                        NavigationLink (destination: LineDetailView(line:line)) {
+                            LineOneStationView(line: line)
+                        }
                     }
+                }.onAppear {
+                    lineStore.load()
                 }
-            }.onAppear {
-                lineStore.load()
-            }
         default:
-            List {
-                ForEach (lineStore.saturday.filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
-                    NavigationLink (destination: LineDetailView(line:line)) {
-                        LineThreeStationView(line: line)
+                List {
+                    ForEach (getListOfDayForThree(inputLineStore: lineStore).filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
+                        NavigationLink (destination: LineDetailView(line:line)) {
+                            LineOneStationView(line: line)
+                        }
                     }
+                }.onAppear {
+                    lineStore.load()
                 }
-            }.onAppear {
-                lineStore.load()
-            }
         }
     }
 }

@@ -11,11 +11,11 @@ func getListOfDayForSix(inputLineStore:LineStoreSix)-> [Line]{
     let day = getDayOfWeek(date: Date())
     switch day {
     case "토":
-        return lineStore.weekday
-    case "일":
         return lineStore.saturday
-    default:
+    case "일":
         return lineStore.sunday
+    default:
+        return lineStore.weekday
     }
 }
 
@@ -28,9 +28,9 @@ struct LineSixView: View {
         switch day {
         case "토":
             List {
-                ForEach (lineStore.saturday.filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
+                ForEach (getListOfDayForSix(inputLineStore: lineStore).filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
-                        LineSixStationView(line: line)
+                        LineOneStationView(line: line)
                     }
                 }
             }.onAppear {
@@ -38,9 +38,9 @@ struct LineSixView: View {
             }
         case "일":
             List {
-                ForEach (lineStore.saturday.filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
+                ForEach (getListOfDayForSix(inputLineStore: lineStore).filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
-                        LineSixStationView(line: line)
+                        LineOneStationView(line: line)
                     }
                 }
             }.onAppear {
@@ -48,9 +48,9 @@ struct LineSixView: View {
             }
         default:
             List {
-                ForEach (lineStore.saturday.filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
+                ForEach (getListOfDayForSix(inputLineStore: lineStore).filter{"\($0)".contains(self.text) || text == ""}, id:\.stationCount) { line in
                     NavigationLink (destination: LineDetailView(line:line)) {
-                        LineSixStationView(line: line)
+                        LineOneStationView(line: line)
                     }
                 }
             }.onAppear {
