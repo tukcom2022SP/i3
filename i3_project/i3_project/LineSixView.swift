@@ -25,6 +25,7 @@ struct LineSixView: View {
     let day = getDayOfWeek(date: Date())
     var body: some View {
         searchBar(text: $text)
+            .navigationBarTitleDisplayMode(.inline)
         switch day {
         case "토":
             List {
