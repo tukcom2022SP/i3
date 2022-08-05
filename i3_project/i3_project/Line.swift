@@ -14,7 +14,7 @@ struct Line:Codable {
     let line  : Int
     let stationNum :  Int
     let stationName  : String
-    let  fff : String   // 상,하행선 이름 ?
+    let  way : String   // 상,하행선 이름 ?
     let fiveThirty  : String
     let six  : String
     let sixThirty  : String
