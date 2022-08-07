@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LineView: View {
+    @State var isNavigationBarHidden: Bool = true
     var body: some View {
         NavigationView {
             List {
@@ -100,8 +101,12 @@ struct LineView: View {
                     }
                 }
             }
-            .navigationTitle(Text("Select Line"))
-            .navigationBarTitleDisplayMode(.large)
+            .navigationTitle(Text("Back"))
+            .navigationBarHidden(self.isNavigationBarHidden)
+            .onAppear{
+                self.isNavigationBarHidden = true
+            }
+            
             
         }
     }
