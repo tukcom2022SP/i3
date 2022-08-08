@@ -14,6 +14,12 @@ func getDayOfWeek(date: Date) -> String {
         let convertStr = formatter.string(from: date)
         return convertStr
 }
+func getTimeOfDay(date : Date) -> String {
+        let formatter_time = DateFormatter()
+        formatter_time.dateFormat = "HH"
+        let current_time_string = formatter_time.string(from: Date())
+        return current_time_string
+}
 func getListOfDayForOne(inputLineStore:LineStoreOne)-> [Line]{
     let lineStore = inputLineStore
     let day = getDayOfWeek(date: Date())

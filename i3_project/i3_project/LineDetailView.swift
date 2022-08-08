@@ -23,6 +23,7 @@ func getState(data:String)-> Text{
 struct LineDetailView: View {
     let line:Line
     let day = getDayOfWeek(date: Date())
+    let time = Int(getTimeOfDay(date: Date()))
     @State var state:String = "정보없음"
     var body: some View {
         List {
@@ -66,6 +67,266 @@ struct LineDetailView: View {
                     .font(.title2)
                     .bold()
                     .frame(maxWidth: .infinity, alignment: .trailing)
+            }
+            HStack {
+                Text("실시간 정보")
+                    .font(.title2)
+                    .bold()
+            }
+            switch time {
+            case 5 :
+                HStack{
+                Text("05:30")
+                    .font(.title3)
+                getState(data: line.fiveThirty)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            case 6 :
+                HStack{
+                    Text("06:00")
+                        .font(.title3)
+                    getState(data: line.six)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                HStack{
+                    Text("06:30")
+                        .font(.title3)
+                    getState(data: line.sixThirty)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            case 7 :
+                HStack{
+                    Text("07:00")
+                        .font(.title3)
+                    getState(data: line.seven)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                HStack{
+                    Text("07:30")
+                        .font(.title3)
+                    getState(data: line.sevenThirty)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            case 8 :
+                HStack{
+                Text("08:00")
+                    .font(.title3)
+                getState(data: line.eight)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                HStack{
+                    Text("08:30")
+                        .font(.title3)
+                    getState(data: line.eightThirty)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            case 9 :
+                HStack{
+                    Text("09:00")
+                        .font(.title3)
+                    getState(data: line.nine)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                HStack{
+                    Text("09:30")
+                        .font(.title3)
+                    getState(data: line.nineThirty)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            case 10 :
+                HStack{
+                    Text("10:00")
+                        .font(.title3)
+                    getState(data: line.ten)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                HStack{
+                    Text("10:30")
+                        .font(.title3)
+                    getState(data: line.tenThirty)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            
+            case 11:
+                HStack{
+                    Text("11:00")
+                        .font(.title3)
+                    getState(data: line.eleven)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                HStack{
+                    Text("11:30")
+                        .font(.title3)
+                    getState(data: line.elevenThirty)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            case 12:
+                HStack{
+                    Text("12:00")
+                        .font(.title3)
+                    getState(data: line.twelve)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                HStack{
+                    Text("12:30")
+                        .font(.title3)
+                    getState(data: line.twelveThirty)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            case 13:
+                HStack{
+                    Text("13:00")
+                        .font(.title3)
+                    getState(data: line.onePM)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                HStack{
+                    Text("13:30")
+                        .font(.title3)
+                    getState(data: line.onePMThirty)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            case 14:
+                HStack{
+                    Text("14:00")
+                        .font(.title3)
+                    getState(data: line.twoPM)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                HStack{
+                    Text("14:30")
+                        .font(.title3)
+                    getState(data: line.twoPMThirty)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            case 15:
+                HStack{
+                    Text("15:00")
+                        .font(.title3)
+                    getState(data: line.threePM)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                HStack{
+                    Text("15:30")
+                        .font(.title3)
+                    getState(data: line.threePMThirty)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            case 16:
+                HStack{
+                    Text("16:00")
+                        .font(.title3)
+                    getState(data: line.fourPM)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                HStack{
+                    Text("16:30")
+                        .font(.title3)
+                    getState(data: line.fourPMThirty)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            case 17:
+                HStack{
+                    Text("17:00")
+                        .font(.title3)
+                    getState(data: line.fivePM)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                HStack{
+                    Text("17:30")
+                        .font(.title3)
+                    getState(data: line.fivePMThirty)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            case 18:
+                HStack{
+                    Text("18:00")
+                        .font(.title3)
+                    getState(data: line.sixPM)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                HStack{
+                    Text("18:30")
+                        .font(.title3)
+                    getState(data: line.sixPMThirty)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            case 19:
+                HStack{
+                    Text("19:00")
+                        .font(.title3)
+                    getState(data: line.sevenPM)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                HStack{
+                    Text("19:30")
+                        .font(.title3)
+                    getState(data: line.sevenPMThirty)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            case 20:
+                HStack{
+                    Text("20:00")
+                        .font(.title3)
+                    getState(data: line.eightPM)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                HStack{
+                    Text("20:30")
+                        .font(.title3)
+                    getState(data: line.eightPMThirty)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            case 21:
+                HStack{
+                    Text("21:00")
+                        .font(.title3)
+                    getState(data: line.ninePM)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                HStack{
+                    Text("21:30")
+                        .font(.title3)
+                    getState(data: line.ninePMThirty)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            case 22:
+                HStack{
+                    Text("22:00")
+                        .font(.title3)
+                    getState(data: line.tenPM)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                HStack{
+                    Text("22:30")
+                        .font(.title3)
+                    getState(data: line.tenPMThirty)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            case 23:
+                HStack{
+                    Text("23:00")
+                        .font(.title3)
+                    getState(data: line.elevenPM)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                HStack{
+                    Text("23:30")
+                        .font(.title3)
+                    getState(data: line.elevenPMThirty)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            default :
+                HStack{
+                    Text("시간 정보 없음")
+                        .font(.title3)
+                }
+
+            }
+            HStack {
+                Text("전체 시간 정보")
+                    .font(.title2)
+                    .bold()
             }
             Group{
                 HStack{
