@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A10382A28A0A41200C3D194 /* getData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A10382928A0A41200C3D194 /* getData.swift */; };
 		A30DED152898F69C0003730D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DED142898F69C0003730D /* SearchBar.swift */; };
 		A34E6F9B2898AFC10012463C /* LineThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E6F8F2898AFC10012463C /* LineThreeView.swift */; };
 		A34E6F9C2898AFC10012463C /* LineEightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E6F902898AFC10012463C /* LineEightView.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A10382928A0A41200C3D194 /* getData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getData.swift; sourceTree = "<group>"; };
 		A30DED142898F69C0003730D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = ../SearchBar.swift; sourceTree = "<group>"; };
 		A34E6F8F2898AFC10012463C /* LineThreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineThreeView.swift; sourceTree = "<group>"; };
 		A34E6F902898AFC10012463C /* LineEightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineEightView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				A355E7A9289A5F3600F7ED22 /* GoogleService-Info.plist */,
+				9A10382928A0A41200C3D194 /* getData.swift */,
 				A30DED142898F69C0003730D /* SearchBar.swift */,
 				A39DCA2A2899094100974FBF /* i3_projectApp.swift */,
 				A34E6F952898AFC10012463C /* Line.swift */,
@@ -199,6 +202,7 @@
 				A39DCA2B2899094100974FBF /* i3_projectApp.swift in Sources */,
 				A34E6F9D2898AFC10012463C /* LineOneView.swift in Sources */,
 				A34E6F9C2898AFC10012463C /* LineEightView.swift in Sources */,
+				9A10382A28A0A41200C3D194 /* getData.swift in Sources */,
 				A39DCA2D2899095B00974FBF /* LineDetailView.swift in Sources */,
 				A34E6FA02898AFC10012463C /* LineFourView.swift in Sources */,
 				A34E6F9E2898AFC10012463C /* LineView.swift in Sources */,

@@ -5,28 +5,7 @@
 //  Created by Park Se in on 2022/07/31.
 //
 import SwiftUI
-
-func getDayOfWeek(date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "EEEEEE"
-        formatter.locale = Locale(identifier:"ko_KR")
-        let convertStr = formatter.string(from: date)
-        return convertStr
-}
     
-func getListOfDayForOne(inputLineStore:LineStoreOne)-> [Line]{
-    let lineStore = inputLineStore
-    let day = getDayOfWeek(date: Date())
-    switch day {
-    case "토":
-        return lineStore.saturday
-    case "일":
-        return lineStore.sunday
-    default:
-        return lineStore.weekday
-    }
-}
-
 struct LineOneView: View {
     @ObservedObject var lineStore = LineStoreOne.singleton
     @State var text = ""
@@ -86,3 +65,4 @@ struct LineOneStationView_Previews: PreviewProvider {
 //88888
 // kkkkk
 // aaaaa
+// aaaa

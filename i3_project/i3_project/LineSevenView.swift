@@ -6,19 +6,6 @@
 //
 import SwiftUI
 
-func getListOfDayForSeven(inputLineStore:LineStoreSeven)-> [Line]{
-    let lineStore = inputLineStore
-    let day = getDayOfWeek(date: Date())
-    switch day {
-    case "토":
-        return lineStore.saturday
-    case "일":
-        return lineStore.sunday
-    default:
-        return lineStore.weekday
-    }
-}
-
 struct LineSevenView: View {
     @ObservedObject var lineStore = LineStoreSeven.singleton
     @State var text = ""
