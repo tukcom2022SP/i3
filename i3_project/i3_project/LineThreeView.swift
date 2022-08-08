@@ -19,7 +19,9 @@ struct LineThreeView: View {
                         LineThreeStationView(line: line)
                     }
                 }
-            }.onAppear {
+            }
+            .listStyle(InsetListStyle())
+            .onAppear {
                 lineStore.load()
             }
         }

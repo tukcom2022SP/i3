@@ -18,7 +18,9 @@ struct LineSevenView: View {
                         LineSevenStationView(line: line)
                     }
                 }
-            }.onAppear {
+            }
+            .listStyle(InsetListStyle())
+            .onAppear {
                 lineStore.load()
             }
         }

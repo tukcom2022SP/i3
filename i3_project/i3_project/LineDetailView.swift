@@ -298,6 +298,7 @@ struct LineDetailView: View {
                 }
             }
         }
+        .listStyle(InsetListStyle())
         .navigationTitle(line.stationName)
     }
 }

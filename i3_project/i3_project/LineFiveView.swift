@@ -18,7 +18,9 @@ struct LineFiveView: View {
                         LineFiveStationView(line: line)
                     }
                 }
-            }.onAppear {
+            }
+            .listStyle(InsetListStyle())
+            .onAppear {
                 lineStore.load()
             }
         }

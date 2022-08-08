@@ -11,80 +11,88 @@ struct LineView: View {
     @State var isNavigationBarHidden: Bool = true
     var body: some View {
         NavigationView {
-            List {
-                HStack {
-                    Image("line1")
-                        .imageStyle()
-                    NavigationLink(destination: LineOneView()){
-                        Text("1호선")
-                            .font(.title)
+            VStack{
+                Text("서울시 지하철 혼잡도")
+                    .font(.title)
+                    .padding()
+                    .aspectRatio(contentMode: .fill)
+                List {
+                    HStack {
+                        Image("line1")
+                            .imageStyle()
+                        NavigationLink(destination: LineOneView()){
+                            Text("1호선")
+                                .font(.title)
+                        }
+                    }
+                    HStack {
+                        Image("line2")
+                            .imageStyle()
+                        NavigationLink(destination: LineTwoView()){
+                            Text("2호선")
+                                .font(.title)
+                        }
+                    }
+                    HStack {
+                        Image("line3")
+                            .imageStyle()
+                        NavigationLink(destination: LineThreeView()){
+                            Text("3호선")
+                                .font(.title)
+                        }
+                    }
+                    HStack {
+                        Image("line4")
+                            .imageStyle()
+                        NavigationLink(destination: LineFourView()){
+                            Text("4호선")
+                                .font(.title)
+                        }
+                    }
+                    HStack {
+                        Image("line5")
+                            .imageStyle()
+                        NavigationLink(destination: LineFiveView()){
+                            Text("5호선")
+                                .font(.title)
+                        }
+                    }
+                    HStack {
+                        Image("line6")
+                            .imageStyle()
+                        NavigationLink(destination: LineSixView()){
+                            Text("6호선")
+                                .font(.title)
+                        }
+                    }
+                    HStack {
+                        Image("line7")
+                            .imageStyle()
+                        NavigationLink(destination: LineSevenView()){
+                            Text("7호선")
+                                .font(.title)
+                        }
+                    }
+                    HStack {
+                        Image("line8")
+                            .imageStyle()
+                        NavigationLink(destination: LineEightView()){
+                            Text("8호선")
+                                .font(.title)
+                        }
                     }
                 }
-                HStack {
-                    Image("line2")
-                        .imageStyle()
-                    NavigationLink(destination: LineTwoView()){
-                        Text("2호선")
-                            .font(.title)
-                    }
+                .listStyle(InsetListStyle())
+                .navigationTitle(Text("Back"))
+                .navigationBarHidden(self.isNavigationBarHidden)
+                .onAppear{
+                    self.isNavigationBarHidden = true
                 }
-                HStack {
-                    Image("line3")
-                        .imageStyle()
-                    NavigationLink(destination: LineThreeView()){
-                        Text("3호선")
-                            .font(.title)
-                    }
-                }
-                HStack {
-                    Image("line4")
-                        .imageStyle()
-                    NavigationLink(destination: LineFourView()){
-                        Text("4호선")
-                            .font(.title)
-                    }
-                }
-                HStack {
-                    Image("line5")
-                        .imageStyle()
-                    NavigationLink(destination: LineFiveView()){
-                        Text("5호선")
-                            .font(.title)
-                    }
-                }
-                HStack {
-                    Image("line6")
-                        .imageStyle()
-                    NavigationLink(destination: LineSixView()){
-                        Text("6호선")
-                            .font(.title)
-                    }
-                }
-                HStack {
-                    Image("line7")
-                        .imageStyle()
-                    NavigationLink(destination: LineSevenView()){
-                        Text("7호선")
-                            .font(.title)
-                    }
-                }
-                HStack {
-                    Image("line8")
-                        .imageStyle()
-                    NavigationLink(destination: LineEightView()){
-                        Text("8호선")
-                            .font(.title)
-                    }
-                }
+                
+                
             }
-            .navigationTitle(Text("Back"))
-            .navigationBarHidden(self.isNavigationBarHidden)
-            .onAppear{
-                self.isNavigationBarHidden = true
+
             }
-            
-            
-        }
     }
 }
 

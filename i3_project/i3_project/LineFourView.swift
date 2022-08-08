@@ -19,7 +19,9 @@ struct LineFourView: View {
                         LineFourStationView(line: line)
                     }
                 }
-            }.onAppear {
+            }
+            .listStyle(InsetListStyle())
+            .onAppear {
                 lineStore.load()
             }
         }
