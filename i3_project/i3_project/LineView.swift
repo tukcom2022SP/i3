@@ -14,10 +14,7 @@ struct LineView: View {
             List {
                 HStack {
                     Image("line1")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: UIScreen.main.bounds.width * 0.12,
-                               height: UIScreen.main.bounds.height * 0.07)
+                        .imageStyle()
                     NavigationLink(destination: LineOneView()){
                         Text("1호선")
                             .font(.title)
@@ -25,10 +22,7 @@ struct LineView: View {
                 }
                 HStack {
                     Image("line2")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: UIScreen.main.bounds.width * 0.12,
-                               height: UIScreen.main.bounds.height * 0.07)
+                        .imageStyle()
                     NavigationLink(destination: LineTwoView()){
                         Text("2호선")
                             .font(.title)
@@ -36,10 +30,7 @@ struct LineView: View {
                 }
                 HStack {
                     Image("line3")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: UIScreen.main.bounds.width * 0.12,
-                               height: UIScreen.main.bounds.height * 0.07)
+                        .imageStyle()
                     NavigationLink(destination: LineThreeView()){
                         Text("3호선")
                             .font(.title)
@@ -47,10 +38,7 @@ struct LineView: View {
                 }
                 HStack {
                     Image("line4")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: UIScreen.main.bounds.width * 0.12,
-                               height: UIScreen.main.bounds.height * 0.07)
+                        .imageStyle()
                     NavigationLink(destination: LineFourView()){
                         Text("4호선")
                             .font(.title)
@@ -58,10 +46,7 @@ struct LineView: View {
                 }
                 HStack {
                     Image("line5")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: UIScreen.main.bounds.width * 0.12,
-                               height: UIScreen.main.bounds.height * 0.07)
+                        .imageStyle()
                     NavigationLink(destination: LineFiveView()){
                         Text("5호선")
                             .font(.title)
@@ -69,10 +54,7 @@ struct LineView: View {
                 }
                 HStack {
                     Image("line6")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: UIScreen.main.bounds.width * 0.12,
-                               height: UIScreen.main.bounds.height * 0.07)
+                        .imageStyle()
                     NavigationLink(destination: LineSixView()){
                         Text("6호선")
                             .font(.title)
@@ -80,10 +62,7 @@ struct LineView: View {
                 }
                 HStack {
                     Image("line7")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: UIScreen.main.bounds.width * 0.12,
-                               height: UIScreen.main.bounds.height * 0.07)
+                        .imageStyle()
                     NavigationLink(destination: LineSevenView()){
                         Text("7호선")
                             .font(.title)
@@ -91,10 +70,7 @@ struct LineView: View {
                 }
                 HStack {
                     Image("line8")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: UIScreen.main.bounds.width * 0.12,
-                               height: UIScreen.main.bounds.height * 0.07)
+                        .imageStyle()
                     NavigationLink(destination: LineEightView()){
                         Text("8호선")
                             .font(.title)
@@ -115,5 +91,17 @@ struct LineView: View {
 struct LineView_Previews: PreviewProvider {
     static var previews: some View {
         LineView()
+    }
+}
+
+extension Image {
+    
+    func imageStyle() -> some View {
+        self
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: UIScreen.main.bounds.width * 0.12,
+                   height: UIScreen.main.bounds.height * 0.07)
+        
     }
 }
