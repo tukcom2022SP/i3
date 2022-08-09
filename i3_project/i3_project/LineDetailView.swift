@@ -71,7 +71,7 @@ struct LineDetailView: View {
             }
             HStack {
                 Toggle(isOn: $toggle1, label: {
-                    Text("실시간 정보")
+                    Text("현재 시간 정보")
                         .font(.title2)
                         .bold()
                 })
@@ -331,7 +331,7 @@ struct LineDetailView: View {
             
             HStack {
                 Toggle(isOn: $toggle2, label: {
-                    Text("실시간 정보")
+                    Text("전체 시간 정보")
                         .font(.title2)
                         .bold()
                 })
