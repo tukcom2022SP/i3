@@ -12,10 +12,18 @@ struct LineView: View {
     var body: some View {
         NavigationView {
             VStack{
-                Text("서울시 지하철 혼잡도")
-                    .font(.title)
-                    .padding()
-                    .aspectRatio(contentMode: .fill)
+                HStack {
+                    Spacer()
+                    Image("subway")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: UIScreen.main.bounds.width * 0.15,
+                           height: UIScreen.main.bounds.height * 0.1)
+
+                    Text("서울시 지하철 혼잡도")
+                        .font(.system(size: 25))
+                    Spacer()
+                }
                 List {
                     HStack {
                         Image("line1")
@@ -23,6 +31,7 @@ struct LineView: View {
                         NavigationLink(destination: LineOneView()){
                             Text("1호선")
                                 .font(.title)
+                                .foregroundColor(Color(hex: 0x0052A4))
                         }
                     }
                     HStack {
@@ -31,6 +40,7 @@ struct LineView: View {
                         NavigationLink(destination: LineTwoView()){
                             Text("2호선")
                                 .font(.title)
+                                .foregroundColor(Color(hex: 0x009D3E))
                         }
                     }
                     HStack {
@@ -39,6 +49,7 @@ struct LineView: View {
                         NavigationLink(destination: LineThreeView()){
                             Text("3호선")
                                 .font(.title)
+                                .foregroundColor(Color(hex: 0xEF7C1C))
                         }
                     }
                     HStack {
@@ -47,6 +58,7 @@ struct LineView: View {
                         NavigationLink(destination: LineFourView()){
                             Text("4호선")
                                 .font(.title)
+                                .foregroundColor(Color(hex: 0x00A5DE))
                         }
                     }
                     HStack {
@@ -55,6 +67,7 @@ struct LineView: View {
                         NavigationLink(destination: LineFiveView()){
                             Text("5호선")
                                 .font(.title)
+                                .foregroundColor(Color(hex: 0x996CAC))
                         }
                     }
                     HStack {
@@ -63,6 +76,7 @@ struct LineView: View {
                         NavigationLink(destination: LineSixView()){
                             Text("6호선")
                                 .font(.title)
+                                .foregroundColor(Color(hex: 0xCD7C2F))
                         }
                     }
                     HStack {
@@ -71,6 +85,7 @@ struct LineView: View {
                         NavigationLink(destination: LineSevenView()){
                             Text("7호선")
                                 .font(.title)
+                                .foregroundColor(Color(hex: 0x747F00))
                         }
                     }
                     HStack {
@@ -79,6 +94,8 @@ struct LineView: View {
                         NavigationLink(destination: LineEightView()){
                             Text("8호선")
                                 .font(.title)
+                                .foregroundColor(Color(hex: 0xEA545D))
+                                
                         }
                     }
                 }
@@ -111,5 +128,17 @@ extension Image {
             .frame(width: UIScreen.main.bounds.width * 0.12,
                    height: UIScreen.main.bounds.height * 0.07)
         
+    }
+}
+
+extension Color {
+    init(hex: UInt, alpha: Double = 1) {
+        self.init(
+            .sRGB,
+            red: Double((hex >> 16) & 0xff) / 255,
+            green: Double((hex >> 08) & 0xff) / 255,
+            blue: Double((hex >> 00) & 0xff) / 255,
+            opacity: alpha
+        )
     }
 }
