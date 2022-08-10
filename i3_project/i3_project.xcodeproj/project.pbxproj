@@ -45,7 +45,7 @@
 		A34E6F972898AFC10012463C /* LineSevenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineSevenView.swift; sourceTree = "<group>"; };
 		A34E6F9A2898AFC10012463C /* LineFiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineFiveView.swift; sourceTree = "<group>"; };
 		A355E7A9289A5F3600F7ED22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A37E53272890FE5C00E27BAD /* x.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = x.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A37E53272890FE5C00E27BAD /* Subway Boom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Subway Boom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37E532E2890FE5D00E27BAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A37E53312890FE5D00E27BAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A37E5385289127BD00E27BAD /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		A37E53282890FE5C00E27BAD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A37E53272890FE5C00E27BAD /* x.app */,
+				A37E53272890FE5C00E27BAD /* Subway Boom.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,9 +120,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A37E53262890FE5C00E27BAD /* x */ = {
+		A37E53262890FE5C00E27BAD /* Subway Boom */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A37E53352890FE5D00E27BAD /* Build configuration list for PBXNativeTarget "x" */;
+			buildConfigurationList = A37E53352890FE5D00E27BAD /* Build configuration list for PBXNativeTarget "Subway Boom" */;
 			buildPhases = (
 				A37E53232890FE5C00E27BAD /* Sources */,
 				A37E53242890FE5C00E27BAD /* Frameworks */,
@@ -132,7 +132,7 @@
 			);
 			dependencies = (
 			);
-			name = x;
+			name = "Subway Boom";
 			packageProductDependencies = (
 				A355E7AC289A5FEF00F7ED22 /* FirebaseAnalytics */,
 				A355E7AE289A5FEF00F7ED22 /* FirebaseAuth */,
@@ -140,7 +140,7 @@
 				A355E7B2289A5FEF00F7ED22 /* FirebaseStorage */,
 			);
 			productName = i3_project;
-			productReference = A37E53272890FE5C00E27BAD /* x.app */;
+			productReference = A37E53272890FE5C00E27BAD /* Subway Boom.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -174,7 +174,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A37E53262890FE5C00E27BAD /* x */,
+				A37E53262890FE5C00E27BAD /* Subway Boom */,
 			);
 		};
 /* End PBXProject section */
@@ -400,7 +400,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A37E53352890FE5D00E27BAD /* Build configuration list for PBXNativeTarget "x" */ = {
+		A37E53352890FE5D00E27BAD /* Build configuration list for PBXNativeTarget "Subway Boom" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A37E53362890FE5D00E27BAD /* Debug */,
