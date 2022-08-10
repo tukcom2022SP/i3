@@ -39,7 +39,7 @@ struct LineDetailView: View {
                 VStack{
                     HStack {
                         Text(line.stationName)
-                            .font(.title)
+                            .font(.body)
                             .bold()
                             .frame(maxWidth: .infinity, alignment: .leading)
                         Text("\(line.date)")
@@ -64,14 +64,14 @@ struct LineDetailView: View {
             }
             // 예시 화면
             HStack{
-                Text("기준 시간")
+                Text("기준 시각")
                     .font(.title2)
                     .bold()
                 VStack {
                     Button {
                         self.ShowAlert = true
                     } label: {
-                        Text("혼잡도")
+                        Text("혼잡도란?")
                             .font(.title2)
                             .bold()
                             .frame(maxWidth: .infinity, alignment: .trailing)
