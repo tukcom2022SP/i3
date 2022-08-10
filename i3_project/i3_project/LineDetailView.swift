@@ -24,8 +24,11 @@ struct LineDetailView: View {
     let line:Line
     let day = getDayOfWeek(date: Date())
     let time = Int(getDayOfTime(date: Date()))
+    let information = "서울교통공사 1-8호선 30분 단위 평균 혼잡도로 30분간 지나는 열차들의 평균 혼잡도(정원대비 승차인원으로, 승차인과 좌석수가 일치할 경우를 혼잡도 34%로 산정) \n"
+    let information2 =  "   여유 (초록색) : 34% 미만 \n 보통 (노란색) : 34 ~ 68% \n 혼잡 (빨간색) : 68% 이상 "
     @State private var toggle1 = false
     @State private var toggle2 = false
+    @State private var ShowAlert = false
     var body: some View {
         List {
             HStack {
@@ -64,10 +67,18 @@ struct LineDetailView: View {
                 Text("기준 시간")
                     .font(.title2)
                     .bold()
-                Text("혼잡도")
-                    .font(.title2)
-                    .bold()
-                    .frame(maxWidth: .infinity, alignment: .trailing)
+                VStack {
+                    Button {
+                        self.ShowAlert = true
+                    } label: {
+                        Text("혼잡도")
+                            .font(.title2)
+                            .bold()
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                    }.alert(isPresented: $ShowAlert) {
+                        Alert(title: Text("혼잡도란?"), message: Text(information + information2), dismissButton: .default(Text("OK")))
+                    }
+                }
             }
             HStack {
                 Toggle(isOn: $toggle1, label: {
