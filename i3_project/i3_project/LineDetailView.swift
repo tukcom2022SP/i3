@@ -580,6 +580,9 @@ struct LineDetailView: View {
                     }
                 }
             }
+            HStack {
+                Link("실시간 열차 운행 정보", destination: URL(string: "https://smapp.seoulmetro.co.kr:58443/traininfo/traininfoUserView.do")!)
+            }
         }
         .navigationTitle(line.stationName)
     }
