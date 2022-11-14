@@ -43,7 +43,7 @@ struct LoginView: View {
                         .background(RoundedRectangle(cornerRadius: 10).strokeBorder())
                 }
                 HStack{
-                    NavigationLink(destination: LineView()) {
+                    NavigationLink(destination: SignUpView()) {
                             Text("회원가입")
                                 .frame(width: 100,height: 10)
                                 .padding()
@@ -63,13 +63,12 @@ struct LoginView: View {
         }
     }
 
-
-
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
         
     }
 }
+
 
 

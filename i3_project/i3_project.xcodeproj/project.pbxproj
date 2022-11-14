@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9A10382A28A0A41200C3D194 /* getData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A10382928A0A41200C3D194 /* getData.swift */; };
 		9AAE39982922433D008BB23D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE39972922433D008BB23D /* LoginView.swift */; };
+		9AAE399A292257C9008BB23D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE3999292257C9008BB23D /* SignUpView.swift */; };
 		A30DED152898F69C0003730D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DED142898F69C0003730D /* SearchBar.swift */; };
 		A34E6F9B2898AFC10012463C /* LineThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E6F8F2898AFC10012463C /* LineThreeView.swift */; };
 		A34E6F9C2898AFC10012463C /* LineEightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E6F902898AFC10012463C /* LineEightView.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		9A10382928A0A41200C3D194 /* getData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getData.swift; sourceTree = "<group>"; };
 		9AAE39972922433D008BB23D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9AAE3999292257C9008BB23D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		A30DED142898F69C0003730D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = ../SearchBar.swift; sourceTree = "<group>"; };
 		A34E6F8F2898AFC10012463C /* LineThreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineThreeView.swift; sourceTree = "<group>"; };
 		A34E6F902898AFC10012463C /* LineEightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineEightView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				A37E532E2890FE5D00E27BAD /* Assets.xcassets */,
 				A37E53302890FE5D00E27BAD /* Preview Content */,
 				A37E5385289127BD00E27BAD /* res */,
+				9AAE3999292257C9008BB23D /* SignUpView.swift */,
 			);
 			path = i3_project;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				A34E6FA12898AFC10012463C /* Line.swift in Sources */,
 				A34E6FA32898AFC10012463C /* LineSevenView.swift in Sources */,
 				A34E6F9B2898AFC10012463C /* LineThreeView.swift in Sources */,
+				9AAE399A292257C9008BB23D /* SignUpView.swift in Sources */,
 				A34E6F9F2898AFC10012463C /* LineSixView.swift in Sources */,
 				A34E6FA62898AFC10012463C /* LineFiveView.swift in Sources */,
 				A34E6FA22898AFC10012463C /* LineTwoView.swift in Sources */,
