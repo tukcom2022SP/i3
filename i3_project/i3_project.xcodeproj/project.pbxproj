@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9A10382A28A0A41200C3D194 /* getData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A10382928A0A41200C3D194 /* getData.swift */; };
+		9AAE39982922433D008BB23D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE39972922433D008BB23D /* LoginView.swift */; };
 		A30DED152898F69C0003730D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DED142898F69C0003730D /* SearchBar.swift */; };
 		A34E6F9B2898AFC10012463C /* LineThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E6F8F2898AFC10012463C /* LineThreeView.swift */; };
 		A34E6F9C2898AFC10012463C /* LineEightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E6F902898AFC10012463C /* LineEightView.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		9A10382928A0A41200C3D194 /* getData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getData.swift; sourceTree = "<group>"; };
+		9AAE39972922433D008BB23D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A30DED142898F69C0003730D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = ../SearchBar.swift; sourceTree = "<group>"; };
 		A34E6F8F2898AFC10012463C /* LineThreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineThreeView.swift; sourceTree = "<group>"; };
 		A34E6F902898AFC10012463C /* LineEightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineEightView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				A34E6F902898AFC10012463C /* LineEightView.swift */,
 				A39DCA2C2899095B00974FBF /* LineDetailView.swift */,
 				A34E6F922898AFC10012463C /* LineView.swift */,
+				9AAE39972922433D008BB23D /* LoginView.swift */,
 				A37E532E2890FE5D00E27BAD /* Assets.xcassets */,
 				A37E53302890FE5D00E27BAD /* Preview Content */,
 				A37E5385289127BD00E27BAD /* res */,
@@ -201,6 +204,7 @@
 				A30DED152898F69C0003730D /* SearchBar.swift in Sources */,
 				A39DCA2B2899094100974FBF /* i3_projectApp.swift in Sources */,
 				A34E6F9D2898AFC10012463C /* LineOneView.swift in Sources */,
+				9AAE39982922433D008BB23D /* LoginView.swift in Sources */,
 				A34E6F9C2898AFC10012463C /* LineEightView.swift in Sources */,
 				9A10382A28A0A41200C3D194 /* getData.swift in Sources */,
 				A39DCA2D2899095B00974FBF /* LineDetailView.swift in Sources */,
