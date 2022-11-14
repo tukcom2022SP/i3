@@ -100,7 +100,7 @@ struct FavoriteView: View {
                     }
                     HStack{
                         NavigationLink(destination: LineView()){
-                            Text("전체보기")
+                            Text("전체")
                                 .font(.title)
                                 .foregroundColor(Color(hex: 0x000000))
                         }
