@@ -20,7 +20,7 @@ struct FavoriteView: View {
                         .frame(width: UIScreen.main.bounds.width * 0.15,
                            height: UIScreen.main.bounds.height * 0.1)
 
-                    Text("즐겨찾기")
+                    Text("즐겨찾기 화면")
                         .font(.system(size: 25))
                     Spacer()
                 }

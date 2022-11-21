@@ -98,6 +98,14 @@ struct LineView: View {
                                 
                         }
                     }
+                    HStack{
+                        Image("subway")
+                            .imageStyle()
+                        NavigationLink(destination: FavoriteView()){
+                            Text("즐겨찾기")
+                                .font(.title)
+                        }
+                    }
                 }
                 .listStyle(InsetListStyle())
                 .navigationTitle(Text("Back"))
