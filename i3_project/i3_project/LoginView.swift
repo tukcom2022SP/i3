@@ -37,8 +37,6 @@ struct LoginView: View {
             request.requestedScopes = [.fullName, .email]
             
             performSignIn(using: [request])
-            
-            LineView()
     }
     private func performExistingAccountSetupFlows() {
       #if !targetEnvironment(simulator)
