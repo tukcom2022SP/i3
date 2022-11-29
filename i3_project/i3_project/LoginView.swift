@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
+import AuthenticationServices
 
 struct LoginView: View {
-    @State var email:String = "";
-    @State var passwd:String = "";
+    @Environment(\.window) var window: UIWindow?
+    @State var appleSignInDelegates: SignInWithAppleDelegates! = nil
     var body: some View {
-        NavigationView {
             VStack{
                 HStack {
                     Spacer()
@@ -25,43 +25,49 @@ struct LoginView: View {
                         .font(.system(size: 25))
                     Spacer()
                 }
+                UserAndPassword()
                 
-                HStack {
-                    Image(systemName: "envelope")
-                        .frame(width: 20)
-                    TextField("ID", text: $email)
-                        .frame(width: 300 ,height: 20)
-                        .padding()
-                        .background(RoundedRectangle(cornerRadius: 10).strokeBorder())
-                }
-                HStack {
-                    Image(systemName: "lock")
-                        .frame(width: 20)
-                    TextField("PW",text: $passwd)
-                        .frame(width: 300 ,height: 20)
-                        .padding()
-                        .background(RoundedRectangle(cornerRadius: 10).strokeBorder())
-                }
-                HStack{
-                    NavigationLink(destination: SignUpView()) {
-                            Text("회원가입")
-                                .frame(width: 100,height: 10)
-                                .padding()
-                                .background(RoundedRectangle(cornerRadius: 10).strokeBorder())
-                        }
-                    NavigationLink(destination: LineView()) {
-                            Text("로그인")
-                                .frame(width: 100,height: 10)
-                                .padding()
-                                .background(RoundedRectangle(cornerRadius: 10).strokeBorder())
-                        }
-                    }
-                }
+                SignInWithApple()
+                    .frame(width: 280,height: 60,alignment: .center)
+                    .onTapGesture(perform: showAppleLogin)
             }
-            .listStyle(InsetListStyle())
-            .navigationTitle(Text("Back"))
         }
+        private func showAppleLogin() {
+            let request = ASAuthorizationAppleIDProvider().createRequest()
+            request.requestedScopes = [.fullName, .email]
+            
+            performSignIn(using: [request])
+            
+            LineView()
     }
+    private func performExistingAccountSetupFlows() {
+      #if !targetEnvironment(simulator)
+      // Note that this won't do anything in the simulator.  You need to
+      // be on a real device or you'll just get a failure from the call.
+      let requests = [
+        ASAuthorizationAppleIDProvider().createRequest(),
+        ASAuthorizationPasswordProvider().createRequest()
+      ]
+
+      performSignIn(using: requests)
+      #endif
+    }
+    private func performSignIn(using requests: [ASAuthorizationRequest]) {
+        appleSignInDelegates = SignInWithAppleDelegates(window: window) { success in
+          if success {
+            // update UI
+          } else {
+            // show the user an error
+          }
+        }
+
+        let controller = ASAuthorizationController(authorizationRequests: requests)
+        controller.delegate = appleSignInDelegates
+        controller.presentationContextProvider = appleSignInDelegates
+
+        controller.performRequests()
+      }
+}
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {

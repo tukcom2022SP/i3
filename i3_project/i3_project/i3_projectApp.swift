@@ -14,6 +14,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
   }
 }
 
+
 @main
 struct i3_projectApp: App {
     var body: some Scene {
