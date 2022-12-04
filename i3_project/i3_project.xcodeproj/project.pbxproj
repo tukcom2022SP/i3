@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DC4FB0A293C688B000DB91A /* getData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC4FB09293C688B000DB91A /* getData.swift */; };
+		0DC4FB0C293C68A5000DB91A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC4FB0B293C68A5000DB91A /* LoginView.swift */; };
 		0DD627CE2935BACF003EE316 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD627CD2935BACF003EE316 /* FavoriteView.swift */; };
-		9A10382A28A0A41200C3D194 /* getData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A10382928A0A41200C3D194 /* getData.swift */; };
-		9AAE39982922433D008BB23D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE39972922433D008BB23D /* LoginView.swift */; };
 		9AAE399A292257C9008BB23D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE3999292257C9008BB23D /* SignUpView.swift */; };
 		A30DED152898F69C0003730D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DED142898F69C0003730D /* SearchBar.swift */; };
 		A34E6F9B2898AFC10012463C /* LineThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E6F8F2898AFC10012463C /* LineThreeView.swift */; };
@@ -31,9 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DC4FB09293C688B000DB91A /* getData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = getData.swift; path = ../../../../.Trash/i3_project/i3_project/getData.swift; sourceTree = "<group>"; };
+		0DC4FB0B293C68A5000DB91A /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = ../../../../.Trash/i3_project/i3_project/i3_project/LoginView.swift; sourceTree = "<group>"; };
 		0DD627CD2935BACF003EE316 /* FavoriteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
-		9A10382928A0A41200C3D194 /* getData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getData.swift; sourceTree = "<group>"; };
-		9AAE39972922433D008BB23D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0DD627CF2935E96F003EE316 /* Subway Boom.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Subway Boom.entitlements"; sourceTree = "<group>"; };
 		9AAE3999292257C9008BB23D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		A30DED142898F69C0003730D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = ../SearchBar.swift; sourceTree = "<group>"; };
 		A34E6F8F2898AFC10012463C /* LineThreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineThreeView.swift; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 		A37E531E2890FE5C00E27BAD = {
 			isa = PBXGroup;
 			children = (
+				0DD627CF2935E96F003EE316 /* Subway Boom.entitlements */,
 				A37E53292890FE5C00E27BAD /* i3_project */,
 				A37E53282890FE5C00E27BAD /* Products */,
 			);
@@ -85,8 +87,9 @@
 		A37E53292890FE5C00E27BAD /* i3_project */ = {
 			isa = PBXGroup;
 			children = (
+				0DC4FB0B293C68A5000DB91A /* LoginView.swift */,
+				0DC4FB09293C688B000DB91A /* getData.swift */,
 				A355E7A9289A5F3600F7ED22 /* GoogleService-Info.plist */,
-				9A10382928A0A41200C3D194 /* getData.swift */,
 				A30DED142898F69C0003730D /* SearchBar.swift */,
 				0DD627CD2935BACF003EE316 /* FavoriteView.swift */,
 				A39DCA2A2899094100974FBF /* i3_projectApp.swift */,
@@ -101,7 +104,6 @@
 				A34E6F902898AFC10012463C /* LineEightView.swift */,
 				A39DCA2C2899095B00974FBF /* LineDetailView.swift */,
 				A34E6F922898AFC10012463C /* LineView.swift */,
-				9AAE39972922433D008BB23D /* LoginView.swift */,
 				A37E532E2890FE5D00E27BAD /* Assets.xcassets */,
 				A37E53302890FE5D00E27BAD /* Preview Content */,
 				A37E5385289127BD00E27BAD /* res */,
@@ -196,15 +198,15 @@
 			files = (
 				A30DED152898F69C0003730D /* SearchBar.swift in Sources */,
 				0DD627CE2935BACF003EE316 /* FavoriteView.swift in Sources */,
+				0DC4FB0A293C688B000DB91A /* getData.swift in Sources */,
 				A39DCA2B2899094100974FBF /* i3_projectApp.swift in Sources */,
 				A34E6F9D2898AFC10012463C /* LineOneView.swift in Sources */,
-				9AAE39982922433D008BB23D /* LoginView.swift in Sources */,
 				A34E6F9C2898AFC10012463C /* LineEightView.swift in Sources */,
-				9A10382A28A0A41200C3D194 /* getData.swift in Sources */,
 				A39DCA2D2899095B00974FBF /* LineDetailView.swift in Sources */,
 				A34E6FA02898AFC10012463C /* LineFourView.swift in Sources */,
 				A34E6F9E2898AFC10012463C /* LineView.swift in Sources */,
 				A34E6FA12898AFC10012463C /* Line.swift in Sources */,
+				0DC4FB0C293C68A5000DB91A /* LoginView.swift in Sources */,
 				A34E6FA32898AFC10012463C /* LineSevenView.swift in Sources */,
 				A34E6F9B2898AFC10012463C /* LineThreeView.swift in Sources */,
 				9AAE399A292257C9008BB23D /* SignUpView.swift in Sources */,
@@ -336,6 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Subway Boom.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"i3_project/Preview Content\"";
@@ -364,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Subway Boom.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"i3_project/Preview Content\"";

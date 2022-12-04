@@ -6,9 +6,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
       
-     // let ref = FIRDatabase.database().reference()  //test
-     // let itemsRef = ref.child("TEST")  // test
-  //    itemsRef.setValue(["Name":"Tilltue"]) //test
 
     return true
   }
